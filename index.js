@@ -11,6 +11,12 @@ const PORT = process.env.PORT || 3000
 const BOT_TOKEN = process.env.BOT_TOKEN
 const BOT_WEBHOOK_URL = process.env.BOT_WEBHOOK_URL || 'https://jazz-wizard.herokuapp.com'
 
+if (!BOT_TOKEN) {
+  console.log('No BOT_TOKEN provided, add it to .env variables')
+  process.exitCode = 1
+  return
+}
+
 // Init bot with all handlers
 const bot = require('./bot')(BOT_TOKEN)
 
