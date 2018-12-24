@@ -1,0 +1,27 @@
+{
+  "name": "jazzwizard",
+  "version": "1.0.0",
+  "description": "Jazz Wizard telegram bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtenq/jwizard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vtenq/jwizard/issues"
+  },
+  "homepage": "https://github.com/vtenq/jwizard#readme",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "koa": "^2.6.2",
+    "koa-body": "^4.0.6",
+    "koa-router": "^7.4.0",
+    "telegraf": "^3.25.5"
+  }
+}
